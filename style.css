@@ -3,12 +3,12 @@ body {
 
 }
 
-.wrapper {
+/* .wrapper {
     max-width: 1438px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 /*HEADER*/
 
@@ -20,8 +20,21 @@ body {
     max-width: auto;
     height: 83px;
     background: #131313;
-    padding-left: 92px;
-    padding-right: 90px;
+    /* padding-left: 92px; */
+    /* padding-right: 90px; */
+}
+
+.header__wrapper {
+    max-width: 1438px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 92px; */
+    /* padding-right: 90px; */
+    gap: 90px;
 }
 
 .header__name a {
@@ -85,10 +98,11 @@ body {
     line-height: normal;
     text-transform: uppercase;
     padding: 13px 33px;
+    opacity: 0.8;
 }
 
 .header__button:hover {
-    background-color: #3f3e3b;
+    opacity: 1;
 }
 
 /*MAIN*/
@@ -195,7 +209,7 @@ h1 {
     flex-shrink: 0;
 }
 
-.SUBMIT:hover{
+.SUBMIT:hover {
     background-color: #e9950d;
 }
 
@@ -477,23 +491,36 @@ h1 {
     margin-top: 25px;
 }
 
-.login__button:active{
+.login__button:active {
     background-color: #fb0000;
 }
 
 /* INPUT BOX Как покрасить дырочку? */
-.input_box {
-    margin-top: 40px;
+.label {
+    cursor: pointer;
 }
 
-.checkbox__text {
-    color: #181818;
-    font-family: Nunito Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 163.68%;
-    /* 22.915px */
+.checkbox {
+    display: none;
+}
+
+.fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
+.fake::before {
+    content: "\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked+.fake::before {
+    opacity: 1;
 }
 
 
