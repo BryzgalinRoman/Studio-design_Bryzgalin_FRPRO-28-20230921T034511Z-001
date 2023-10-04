@@ -98,11 +98,11 @@ body {
     line-height: normal;
     text-transform: uppercase;
     padding: 13px 33px;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .header__button:hover {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 /*MAIN*/
@@ -489,10 +489,11 @@ h1 {
     background-color: #E3B873;
     border: none;
     margin-top: 25px;
+    opacity: 1;
 }
 
-.login__button:active {
-    background-color: #fb0000;
+.login__button:hover {
+    opacity: 0.8;
 }
 
 /* INPUT BOX Как покрасить дырочку? */
@@ -724,7 +725,289 @@ outline: none;
 }
 
 /* <!-- ЗАКРЫЛАСЬ ЧЕТВЕРТАЯ СЕКЦИЯ TYPES --> */
+/* <!-- ПЯТАЯ СЕКЦИЯ --> */
 
+.feedback {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 707px;
+    max-width: 1171px;
+    margin: 0 auto;
+    margin-top: 258px;
+}
+
+/* <!-- первый контейнер --> */
+.advantages {
+    height: 540px;
+    background: url("images/png/image_background_city.png");
+    background-size: cover;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* background: url("images/png/image_background_city.png"), lightgray 0% / cover no-repeat; */
+    /* max-width: 1171px;
+    margin: 0 auto; */
+}
+
+.advantages-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 95px;
+    margin-left: 30%;
+}
+
+.circle {
+    background: #e3b873;
+    border: 8px solid #ffffff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 25px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 13px;
+    color: #FFF;
+    text-align: center;
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%;
+    /* 24.948px */
+}
+
+.advantages-item-subtitle {
+    color: #363636;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(54, 54, 54, 1);
+}
+
+/* конец <!-- первый контейнер --> */
+
+/* <!-- второй контейнер --> */
+.advantages_form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* черная форма */
+.advantages_form_holder {
+    width: 506px;
+    height: 509px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    font-style: normal;
+    font-weight: normal;
+    justify-content: center;
+    margin-bottom: 38px;
+}
+
+.advantages-form-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.22%;
+    /* 25.78px */
+}
+
+/* сама форма */
+.online_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages_inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 39px;
+}
+
+.advantages_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 408px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.online_form_lable {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 163.68%;
+    /* 21.278px */
+    padding-left: 3px;
+}
+
+.input_pig {
+    width: 100%;
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 163.68%;
+    /* 22.915px */
+    /* font-family: Nunito Sans; */
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    /* font-size: 14px; */
+    /* line-height: 23px; */
+    color: #ffffff;
+    background-color: #131313;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.input_pig::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #ffffff;
+}
+
+/* чекбокс */
+
+.checkbox_advantages {
+    display: flex;
+}
+
+/* невидимый чексбокс */
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* новый чекбокс */
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    border-radius: 1px;
+}
+
+/* закраска при нажатии */
+.custom-checkbox:checked+label::before {
+    border-color: #e3b873;
+    background-color: #e3b873;
+    background-image: url("images\svg\checkbox_2.svg");
+}
+
+.checkbox-2 {
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 163.68%;
+    /* 22.915px */
+}
+
+/* Button advantages */
+
+.advantages-form-button {
+    width: 213px;
+    height: 51px;
+    align-self: flex-end;
+    font-family: Nunito Sans, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #e3b873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.advantages-form-button:hover {
+    opacity: 0.8;
+}
+
+
+
+/* свинка */
+.advantages_form_sale_pig {
+    display: flex;
+    align-items: center;
+}
+
+.pig {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #e3b873;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.sale_description {
+    width: 344px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #e3b873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.22%;
+    /* 25.78px */
+}
+
+
+
+
+/* <!-- конец второй контейнер --> */
+
+/* <!-- ЗАКРЫЛАСЬ ПЯТАЯ СЕКЦИЯ --> */
 /* FOOTER */
 
 .footer {
