@@ -109,16 +109,26 @@ body {
 
 /* SECTION OVERLAY */
 
-.section__img {
+.overlay {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    padding-left: 134px;
+    /* padding-left: 134px; */
+    /* align-items: center; */
+    /* position: relative; */
+    /* margin: 0 auto; */
     height: 707px;
     /* width: 100%; */
     background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.15)),
         url("images/png/image_4_3.png") center/cover;
+        
+}
 
+.overlay__container{
+    display: flex;
+    min-width: 1171px;
+    align-items: center;
+    /* margin: 0 auto; */
 }
 
 h1 {
