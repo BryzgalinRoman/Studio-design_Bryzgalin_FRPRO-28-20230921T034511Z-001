@@ -1126,6 +1126,7 @@ outline: none;
 /* <!-- СЕДЬМАЯ СЕКЦИЯ --> */
 
 .clients {
+    /* margin-bottom: 0px; */
     /* position: relative; */
     /* margin-top: 0px; */
 }
@@ -1279,19 +1280,30 @@ outline: none;
 
 /* <!-- ЗАКРЫЛАСЬ СЕДЬМАЯ СЕКЦИЯ --> */
 
+
+/* <!-- ВОСЬМАЯ СЕКЦИЯ --> */
 .questions {
     /* display: flex;
     flex-direction: row;
     justify-content: center; */
+    /* position: absolute; */
     margin: 0 auto;
-    width: 1440px;
+    /* width: 1440px; */
     height: 953.898px;
     flex-shrink: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)),
-        url("images/png/background_houses_questions.png"), lightgray 50% / cover no-repeat;
+        url("images/png/background_houses_questions.png"), lightgray 50% / cover repeat;
 }
 
-.questions__container {}
+.questions__container {
+    margin-top: 0px;
+    width: 1171px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* FORM */
 .questions__form_holder {
@@ -1306,7 +1318,9 @@ outline: none;
     font-style: normal;
     font-weight: normal;
     justify-content: center;
-    margin-bottom: 38px;
+    margin-bottom: 52px;
+    margin-top: -250px;
+    z-index: 2;
 }
 
 .questions-form-title {
@@ -1320,10 +1334,12 @@ outline: none;
     /* 27.72px */
     text-transform: uppercase;
     text-transform: uppercase;
+    /* margin-bottom: 26px; */
 }
 
 .question_btn {
     font-style: normal;
+    align-self: center;
 }
 
 .question__input_one {
@@ -1335,8 +1351,23 @@ outline: none;
     width: 231px;
 }
 
+/* #feedback-input-1 {
+    width: auto;
+} */
+
+.three {
+    width: 520px;
+}
+
 .questions__label {
+    /* display: flex; */
+    /* justify-content: center; */
     margin-top: 50px;
+    /* width: 256px; */
+    /* margin: 0 auto; */
+    /* align-items: center; */
+    /* align-content: center; */
+    align-self: center;
     /* margin-left: 0px; */
 }
 
@@ -1364,6 +1395,7 @@ outline: none;
     line-height: 138.6%;
     /* 27.72px */
     text-transform: uppercase;
+    margin-bottom: 26px;
 }
 
 .social-media-signs {
@@ -1371,6 +1403,7 @@ outline: none;
     width: 71px;
     height: 28px;
     flex-shrink: 0;
+    margin-bottom: 40px;
 }
 
 .questions__map {
