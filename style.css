@@ -420,11 +420,8 @@ h1 {
     gap: 50px;
     margin-top: 92px;
     width: 795px;
-    }
+}
 
-    /* .video_input{
-        background-color: #FFF;
-    } */
 
 .login__button {
     width: 200px;
@@ -447,7 +444,7 @@ h1 {
     opacity: 0.8;
 }
 
-/* INPUT BOX Как покрасить дырочку? */
+/* INPUT BOX  */
 .first-checkbox {
     margin-top: 40px;
     align-self: center;
@@ -481,7 +478,7 @@ h1 {
     opacity: 1;
 }
 
-/* INPUT MFCK Как убрать рамки? */
+/* INPUT */
 
 .text-field {
     width: 231px;
@@ -771,6 +768,16 @@ h1 {
     padding-left: 3px;
 }
 
+#video_input {
+    color: #000000;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#video_input::-webkit-input-placeholder {
+    color: #000000;
+}
+
 .input_pig {
     width: 100%;
     color: #FFF;
@@ -979,6 +986,10 @@ h1 {
     width: 354px;
     height: 557.883px;
 
+}
+
+.yellow_arrow {
+    display: none;
 }
 
 /* <!-- СЕДЬМАЯ СЕКЦИЯ --> */
@@ -1230,25 +1241,14 @@ h1 {
 
 @media screen and (max-width: 1300px) {
 
-    /* .header, */
-    /* main, */
-    /* .overlay, */
-    /* .section__black, */
     .section__black_nav,
-    /* .border_bottom_gold, */
     .arrow,
-    /* .hero, */
-    /* .types, */
     .feedback,
-    /* .fantasies, */
     .fantasies__list_nav,
     .fantasies__img_second_column,
     .fantasies__img_two,
     .clients,
     .border_bottom_gold,
-    /* .questions__title, */
-    /* .social-media-signs, */
-    /* .questions, */
     .footer,
     .header__nav,
     .header__button {
@@ -1265,9 +1265,7 @@ h1 {
 
     .overlay__container {
         height: 100%;
-        /* margin: 0 18px; */
         display: block;
-        /* text-align: center; */
     }
 
     .overlay__content {
@@ -1285,9 +1283,8 @@ h1 {
     .overlay__h1,
     .get__ready {
         width: 339px;
-        /* height: auto; */
         margin-bottom: 16px;
-        /* margin: 0 auto; */
+
     }
 
     .color__text_white,
@@ -1303,7 +1300,7 @@ h1 {
 
     .btn {
         display: block;
-        /* flex-direction: column; */
+
         max-width: 100%;
         margin-top: 32px;
     }
@@ -1319,11 +1316,11 @@ h1 {
         height: auto;
     }
 
-    .main_text_decoration{
+    .main_text_decoration {
         font-size: 14px;
     }
 
-    .second_text_decoration{
+    .second_text_decoration {
         font-size: 11px;
         width: 85px;
         height: auto;
@@ -1350,23 +1347,24 @@ h1 {
         justify-content: center;
     }
 
-    /* ..background__img {
-   width: auto;
-} */
+    .background__img {
+        width: 340px;
+    }
 
     .background__img img {
         width: 340px;
+        margin: auto;
         order: 3;
 
-        /* height: 100%; */
+
     }
 
     .container {
         width: 340px;
-        /* flex-direction: row; */
+
     }
 
-    .container__h3_block{
+    .container__h3_block {
         width: 110px;
     }
 
@@ -1391,48 +1389,58 @@ h1 {
         order: 3;
     }
 
-    .container{
+    .container {
         order: 4;
     }
 
     .hero,
     .hero__video {
-        /* color: #FFF; */
+
         background: #181818;
         height: auto;
     }
 
-    .hero{
+    .hero {
         margin-top: 100px;
     }
 
     .video__block,
     .video__text,
-    .login__video_container{
+    .login__video_container {
         width: 340px;
         color: #FFF;
         height: 207px;
     }
 
     .video__text,
-    .text-field__label{
+    .text-field__label {
         font-size: 11px;
         height: auto;
         color: rgba(255, 255, 255, 0.50);
     }
 
-    .text-field__input{
+    .text-field__input {
         background-color: #181818;
         color: #FFF;
     }
 
-    .login__video_container{
+    #video_input {
+        color: #ffffff;
+        background-color: #181818;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    
+    #video_input::-webkit-input-placeholder {
+        color: #ffffff;
+    }
+
+    .login__video_container {
         height: auto;
         margin-bottom: -22px;
     }
 
     .text-field,
-    .text-field__input{
+    .text-field__input {
         width: 340px;
     }
 
@@ -1444,14 +1452,15 @@ h1 {
         border-bottom: 1px solid rgb(255, 255, 255);
     }
 
-    .text-field{
+    .text-field {
         order: 1;
     }
-    .first-checkbox{
+
+    .first-checkbox {
         order: 2;
     }
 
-    .login__button{
+    .login__button {
         order: 3;
         width: 340px;
     }
@@ -1483,15 +1492,15 @@ h1 {
         margin-bottom: 80px;
     }
 
-    .description__img{
+    .description__img {
         margin-bottom: -190px;
     }
 
-    .description__container{
+    .description__container {
         display: flex;
         flex-direction: column;
         margin: 0;
-        /* align-self: flex-start; */
+
     }
 
     .fantasies,
@@ -1514,17 +1523,38 @@ h1 {
 
     .fantasies__list_title {
         text-align: center;
-        /* margin-bottom: 24px; */
-        margin: 24px auto;
+        / margin: 24px auto;
     }
 
     .fantasies__img,
     .fantasies__img_first_column,
     .fantasies__img_one {
         margin: auto;
-        /* width: 340px; */
+
         height: 242px;
-        background: url("images/png/image\ 5.3.png");
+
+    }
+
+    .yellow_arrow {
+        display: block;
+        position: absolute;
+    }
+
+    .yellow_arrow__left {
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+
+    .yellow_arrow__right {
+        margin-top: -67px;
+        margin-left: 300px;
+    }
+
+    .yellow_arrow__left,
+    .yellow_arrow__right,
+    .yellow_arrow__left img,
+    .yellow_arrow__right img {
+        width: 66px;
     }
 
     .questions,
@@ -1533,8 +1563,7 @@ h1 {
     .questions-form-title,
     .online_form,
     .advantages_inputs,
-    .advantages_input
-     {
+    .advantages_input {
         width: 375px;
         margin: auto;
     }
@@ -1546,7 +1575,7 @@ h1 {
     }
 
     .question__input_one {
-        /* width: 340px; */
+
         flex-direction: column;
         gap: 35px;
         margin-bottom: 40px;
@@ -1559,16 +1588,16 @@ h1 {
         background-color: #181818;
     }
 
-    .input_pig{
+    .input_pig {
         border-bottom: 1px solid rgb(255, 255, 255);
     }
 
     .questions__form_holder {
-        /* width: 340px; */
+
         background: none;
         display: flex;
         flex-direction: column;
-        /* width: 375px; */
+
         margin-top: 185px;
         z-index: 0;
         order: 1;
@@ -1589,17 +1618,17 @@ h1 {
     .questions-form-title {
         margin-top: 0px;
         margin-bottom: 40px;
-        /* order: 1; */
+
     }
 
-    .questions__label{
+    .questions__label {
         margin-top: 20px;
         margin-bottom: 40px;
         margin-left: 18px;
         align-self: baseline;
     }
 
-    .question_btn{
+    .question_btn {
         width: 340px;
     }
 
@@ -1610,13 +1639,13 @@ h1 {
         margin-top: 15px;
     }
 
-.questions__title {
-    width: 340px;
-    height: auto;
-    text-align: center;
-    /* font-size: 18px; */
-    margin-top: 30px;
-    margin-bottom: 23px;
-}
+    .questions__title {
+        width: 340px;
+        height: auto;
+        text-align: center;
+
+        margin-top: 30px;
+        margin-bottom: 23px;
+    }
 
 }
